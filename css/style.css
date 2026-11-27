@@ -1697,3 +1697,58 @@ img {
 .page-link-card span { color: var(--text-muted); font-size: 13px; line-height: 1.5; }
 @media (max-width: 900px) { .page-link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .page-link-grid { grid-template-columns: 1fr; } }
+
+/* Homepage's two local enquiry cards fill the available row cleanly. */
+.local-buyer-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 980px;
+  margin-inline: auto;
+}
+.local-buyer-grid .page-link-card { min-height: 190px; }
+.local-buyer-grid h3,
+.local-buyer-grid p { margin: 0; }
+.local-buyer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 26px auto 0;
+}
+.local-buyer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  color: #fff;
+  background: var(--brand-orange);
+  border: 2px solid var(--brand-orange);
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 5px 14px rgba(37, 99, 235, .18);
+  transition: background-color .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+.local-buyer-link:hover {
+  background: var(--brand-orange-hover);
+  border-color: var(--brand-orange-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, .24);
+}
+.local-buyer-link-secondary {
+  color: var(--brand-orange);
+  background: #fff;
+}
+.local-buyer-link-secondary:hover { color: #fff; }
+
+/* Keep the AC inventory guidance separated from the expandable catalog. */
+.equipment-assessment-section {
+  margin-top: 44px;
+  padding: 44px 36px;
+  border: 1px solid #dbeafe;
+  border-radius: 20px;
+}
+@media (max-width: 700px) {
+  .local-buyer-grid { grid-template-columns: 1fr; }
+  .local-buyer-grid .page-link-card { min-height: 0; }
+  .equipment-assessment-section { margin-top: 30px; padding: 30px 20px; }
+}
