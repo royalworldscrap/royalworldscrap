@@ -1747,10 +1747,55 @@ img {
   border: 1px solid #dbeafe;
   border-radius: 20px;
 }
+.seo-guide-article {
+  max-width: 880px;
+  margin: 0 auto;
+  color: var(--text-body);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.seo-guide-article h3 {
+  margin: 28px 0 8px;
+  color: var(--text-dark);
+  font: 700 21px/1.35 'Outfit', sans-serif;
+}
+.seo-guide-article h3:first-child { margin-top: 0; }
+.seo-guide-article p { margin: 0 0 16px; }
+.ac-types-article { max-width: 920px; }
+.ac-types-article .ac-article-lede {
+  margin: 0 0 30px;
+  color: var(--text-dark);
+  font-size: 18px;
+  line-height: 1.75;
+}
+.ac-types-article h2 {
+  margin: 40px 0 12px;
+  padding-top: 24px;
+  border-top: 1px solid var(--bg-border);
+  color: var(--text-dark);
+  font: 700 27px/1.3 'Outfit', sans-serif;
+}
+.ac-types-article h3 { margin-top: 22px; }
+.equipment-assessment-note {
+  margin: 24px 0;
+  padding: 22px 26px;
+  background: #fff;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+}
+.equipment-assessment-note h3 { margin-top: 0; }
+.equipment-assessment-note ul { margin: 10px 0 0; padding-left: 22px; }
+.equipment-assessment-note li { margin: 5px 0; }
+.seo-guide-cta { margin-top: 26px !important; text-align: center; }
 @media (max-width: 700px) {
   .local-buyer-grid { grid-template-columns: 1fr; }
   .local-buyer-grid .page-link-card { min-height: 0; }
   .equipment-assessment-section { margin-top: 30px; padding: 30px 20px; }
+  .seo-guide-article { font-size: 15px; line-height: 1.7; }
+  .seo-guide-article h3 { font-size: 19px; }
+  .ac-types-article .ac-article-lede { font-size: 16px; }
+  .ac-types-article h2 { margin-top: 32px; padding-top: 20px; font-size: 23px; }
+  .equipment-assessment-note { padding: 18px; }
 }
 
 /* FAQ page */
