@@ -52,33 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. "Show More" Categories Toggle
-  const showMoreCategoriesBtn = document.getElementById('showMoreCategoriesBtn');
-  const extendedCategoriesGrid = document.getElementById('extendedCategoriesGrid');
-
-  if (showMoreCategoriesBtn && extendedCategoriesGrid) {
-    showMoreCategoriesBtn.addEventListener('click', () => {
-      const isExpanded = extendedCategoriesGrid.classList.toggle('open');
-      
-      if (isExpanded) {
-        showMoreCategoriesBtn.innerHTML = `
-          <span>Show Fewer Categories</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
-        `;
-      } else {
-        showMoreCategoriesBtn.innerHTML = `
-          <span>Show All 10 AC Types & Services (6 More)</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-        `;
-        const whatWeBuySection = document.getElementById('what-we-buy');
-        if (whatWeBuySection) {
-          whatWeBuySection.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    });
-  }
-
-  // 3. "Show More" Clients Toggle
+  // 2. "Show More" Clients Toggle
   const showMoreClientsBtn = document.getElementById('showMoreClientsBtn');
   const extendedClientsGrid = document.getElementById('extendedClientsGrid');
 

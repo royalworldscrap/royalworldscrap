@@ -28,7 +28,7 @@ jobs:
       - name: Prepare site files
         run: |
           mkdir _site
-          cp index.html services.html sell-scrap.html ac-scrap.html contact.html favicon.svg robots.txt sitemap.xml _site/
+          cp index.html faq.html ac-scrap.html contact.html favicon.svg robots.txt sitemap.xml llms.txt _site/
           cp -R css js images _site/
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3

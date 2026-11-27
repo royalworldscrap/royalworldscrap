@@ -14,8 +14,7 @@ Share your location, AC type, quantity and condition by phone, WhatsApp or the e
 
 ## Website pages
 - [Home and AC scrap buyer information](https://royal-world.in/)
-- [Sell AC scrap process and enquiry](https://royal-world.in/sell-scrap.html)
 - [AC types purchased](https://royal-world.in/ac-scrap.html)
-- [Services](https://royal-world.in/services.html)
+- [Frequently asked questions about AC scrap](https://royal-world.in/faq.html)
 - [Contact and service area](https://royal-world.in/contact.html)
 - [XML sitemap](https://royal-world.in/sitemap.xml)
